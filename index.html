@@ -18,11 +18,13 @@
             <ul>
                 <li>
                     <a href="">
-                    <span class="icon"><i class="fab fa-apple"></i></span>
-                    <span class="title"> <h2>Apple</h2></span>
+                        <span class="icon"><i class="fab fa-apple"></i></span>
+                        <span class="title">
+                            <h2>Apple</h2>
+                        </span>
                     </a>
                 </li>
-                
+
                 <li>
                     <a href="">
                         <span class="icon"><i class="fas fa-tachometer-alt" aria-hidden="true"></i></span>
@@ -86,9 +88,9 @@
                 </li>
                 <li>
                     <a href="">
-                    <span class="icon"><i class="fas fa-cog"></i></span>
-                    <span class="title">Settings</span>
-                </a>
+                        <span class="icon"><i class="fas fa-cog"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -97,23 +99,116 @@
                 <div class="toggle" onclick="toggleMenu()"><i class="fas fa-bars"></i></div>
                 <div class="search">
                     <label>
-                        <input type="text" placeholder="Search here">
+                        <input type="text" placeholder="Search Here">
+                        <i class="fas fa-search"></i>
                     </label>
                 </div>
                 <div class="user">
                     <img src="/Design Photo xd/user.png">
                 </div>
             </div>
+            <div class="cardbox">
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardName">Daily Views</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div>
+                        <div class="numbers">208</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">1,042</div>
+                        <div class="cardName">Weather</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numbers">$4,950</div>
+                        <div class="cardName">Earning</div>
+                    </div>
+                    <div class="iconBox">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h2>Recent Orders</h2>
+                        <a href="#" class="btn">View All</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>  
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td> <span class="status delivered"> Deliverd</span></td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td> <span class="status delivered"> Deliverd</span></td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td> <span class="status delivered"> Deliverd</span></td>
+                            </tr>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>$1200</td>
+                                <td>Paid</td>
+                                <td> <span class="status delivered"> Deliverd</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="recentCustomers">
+                    <div class="cardHeader">
+                        <h2>Recent Customers</h2>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </div>
-<script>
-    function toggleMenu(){
-        let toggle =document.querySelector('.toggle');
-        let navigation =document.querySelector('.navigation');
-        toggle.classList.toggle('active')
-        navigation.classList.toggle('active')
-    }
-</script>
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
 </body>
 
 </html>
