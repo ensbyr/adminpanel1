@@ -209,3 +209,21 @@ body {
     font-size: 2.5em;
     color: #03a9f4;
 }
+.details{
+    position: relative;
+    width: 100%;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 2fr,1fr;
+}
+.details .recentOrders{
+    position: relative;
+    display: block;
+    min-height: 530px;
+    background: #fff;
+    padding: 20px;
+}
+.cardHeader{
+    display: flex;
+    justify-content: space-between;
+}
