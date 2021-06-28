@@ -195,6 +195,8 @@ body {
     justify-content: space-between;
     cursor: pointer;
     border-radius: 10px;
+    box-shadow: 10px 10px 5px rgba(128, 128, 128, 0.226);
+
 }
 
 
@@ -217,7 +219,9 @@ body {
     width: 100%;
     padding: 20px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    grid-row: 20px;
+    grid-template-columns: 2fr 2fr;
 }
 .details .recentOrders{
     position: relative;
@@ -225,11 +229,17 @@ body {
     min-height: 530px;
     background: #fff;
     padding: 20px;
+    border-radius: 20px;
 }
 .cardHeader{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+}
+.cardHeader a:hover{
+    transition: 0.5s;
+    color: #003147;
+
 }
 .cardHeader h2{
 font-weight: 600;    
@@ -259,9 +269,66 @@ font-weight: 600;
 }
 .details .recentOrders table tbody tr:hover{
     background: #03a9f4;
+    color: #fff;
     transition: 0.5s;
     
 }
 .details .recentOrders table tr td{
     padding: 9px 5px;
+}
+.details .recentOrders table thead tr td:last-child,
+.details .recentOrders table tbody tr td:last-child{
+    text-align: right;
+}
+.details .recentOrders table thead tr td:nth-child(2),
+.details .recentOrders table tbody tr td:nth-child(2){
+    text-align: right;
+    padding-right: 20px;
+}
+.details .recentOrders table thead tr td:nth-child(3),
+.details .recentOrders table tbody tr td:nth-child(3){
+    text-align: center;
+    padding-right: 20px;
+}
+.status{
+    position: relative;
+    padding: 2px 4px;
+    background: #f00;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.delivered{
+    background: #08d808;
+}
+.pending{
+    background: #f9ca3f;
+}
+.return{
+    background: #f00;
+}
+.inprogress{
+    background: #1795ce;
+}
+
+.details .recentCustomers{
+    position: relative;
+    display: grid;
+    height: 16.56rem;
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+.details .weatherforecast{
+    position: relative;
+    display: grid;
+    height: 16.56rem;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+ 
+
 }
