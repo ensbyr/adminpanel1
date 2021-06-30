@@ -213,6 +213,7 @@ body {
 
 .cardbox .card .iconBox:hover {
     color: #003147;
+    transition: 0.5s;
 }
 
 .details {
@@ -330,7 +331,7 @@ body {
 .details .recentCustomers {
     position: relative;
     display: grid;
-    height: 19.56rem;
+    height: auto;
     background: #fff;
     padding: 20px;
     margin-bottom: 1rem;
@@ -340,7 +341,7 @@ body {
 .details .weatherforecast {
     position: relative;
     display: grid;
-    height: 16.56rem;
+    height: auto;
     background: #fff;
     padding: 20px;
     border-radius: 20px;
