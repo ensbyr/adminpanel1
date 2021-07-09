@@ -7,7 +7,7 @@
 }
 
 body {
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .conteiner {
@@ -103,7 +103,10 @@ body {
     width: calc(100% - 60px);
     left: 60px;
 }
-
+.topbar{
+    position: fixed;
+    z-index: 99;
+}
 .main .topbar {
     width: 100%;
     background: #fff;
@@ -178,8 +181,8 @@ body {
 
 .cardbox {
     position: relative;
-    width: 100%;
-    padding: 20px;
+    width: 100%; 
+    padding: 70px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
@@ -304,7 +307,7 @@ body {
 .status {
     position: relative;
     padding: 2px 4px;
-    background: #f00;
+    background: #1795ce;
     color: #fff;
     border-radius: 4px;
     font-size: 14px;
@@ -384,6 +387,7 @@ body {
     font-weight: 500;
     line-height: 1.2em;
 }
+
 
 /*Responsive Make It*/
 
