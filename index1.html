@@ -337,7 +337,7 @@
         </script>
 
         <script>
-            $(document).ready(function () {
+            $(document).ready(function weatherbox() {
 
 
 
@@ -350,8 +350,7 @@
 
                         $.ajax({
 
-                            url: "http://api.openweathermap.org/data/2.5/weather?q=London,uk&units=metric" +
-                                "&APPID=fc746e65bbc1f6de5bcae396d7de3eeb",
+                            url: "http://api.openweathermap.org/data/2.5/weather?id=524901&lang=fr&appid={0ea8612efcf970dae927da10aa0ec1b0}",
 
                             type: "POST",
 
