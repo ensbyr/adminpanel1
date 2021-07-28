@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/adminpanel1/css/style2.css">
     <!--font awsome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-        
+
 </head>
 
 <body>
@@ -195,7 +195,7 @@
                             <tbody>
                                 <tr>
                                     <td width='60px'>
-                                        <div class="imgBx"><img src="/Design Photo xd/human1.jpg" alt=""></div>
+                                        <div class="imgBx"><img src="Design Photo xd/human1.jpg" alt=""></div>
                                     </td>
                                     <td>
                                         <h4>David <br></h4><span>Italy</span>
@@ -203,7 +203,7 @@
                                 </tr>
                                 <tr>
                                     <td width='60px'>
-                                        <div class="imgBx"><img src="/Design Photo xd/human2.jpg" alt=""></div>
+                                        <div class="imgBx"><img src="Design Photo xd/human2.jpg" alt=""></div>
                                     </td>
                                     <td>
                                         <h4>Selen <br></h4><span>French</span>
@@ -211,7 +211,7 @@
                                 </tr>
                                 <tr>
                                     <td width='60px'>
-                                        <div class="imgBx"><img src="/Design Photo xd/human3.jpg" alt=""></div>
+                                        <div class="imgBx"><img src="Design Photo xd/human3.jpg" alt=""></div>
                                     </td>
                                     <td>
                                         <h4>Mohammed <br></h4><span>India</span>
@@ -219,7 +219,7 @@
                                 </tr>
                                 <tr>
                                     <td width='60px'>
-                                        <div class="imgBx"><img src="/Design Photo xd/human5.jpg" alt=""></div>
+                                        <div class="imgBx"><img src="Design Photo xd/human5.jpg" alt=""></div>
                                     </td>
                                     <td>
                                         <h4>Marry <br></h4> <span>USA</span>
@@ -232,241 +232,141 @@
                     </div>
                     <div class="weatherforecast">
                         <div class="cardHeader">
-                            
+
                             <h3>Weather Foracast</h3>
                             <br>
-                          </div>
-                          <div class="weatherbox">
+                        </div>
+                        <!-- <div class="main">
+    <div class="header">
+      <h1>OpenWeatherMap API</h1>
+      <p>Enter any city name in the input box below to get the data</p>
+    </div> -->
 
-                            <strong id="city"></strong>
-                            <span id="temp"></span>
-                            <p id="desc"></p>
-                          
-                          </div>
+                        <div class="input">
+                            <input type="text" placeholder="Enter the city" class="input_text">
+                            <input type="submit" value="Submit" class="submit">
+                        </div>
+                        <div class="container">
+                            <div class="card2">
+                                <h1 class="name" id="name"></h1>
+                                <p class="temp"></p>
+                                <p class="clouds"></p>
+                                <p class="desc"></p>
                             </div>
-                            
-                            
                         </div>
                     </div>
 
-                </div>
-                <!-- <div class="testingbar">
-                    <table >
-                        <thead>
-                            <tr><th>HEader</th></tr>
-                        </thead>
-                        <tbody id="myHTMLWrapper"></tbody>
-                    </table>
-                </div> -->
 
+
+
+                </div>
             </div>
 
+
         </div>
-       <!-- <script>
-            var wrapper = document.getElementById("myHTMLWrapper");
+    </div>
 
-            var myHTML = '';
-            var array = ['batu', 'enes', 'bugra'];
-            for (var i = 0; i < array.length; i++) {
-                myHTML += '<tr class="test"><td>Testing out my script! loop #' + (i + 1) + '</td></tr>';
-            }
+    </div>
 
-            wrapper.innerHTML = myHTML
 
-        </script>
-        -->
-        <script>
-            var myArray = [
-                { 'name': 'Star Refrigerator', 'Price': '$1200', 'Payment': 'Paid', 'status': 'Pending' },
-                { 'name': 'Window Coolers', 'Price': '$110', 'Payment': 'Due', 'status': 'In Progress' },
-                { 'name': 'Speakers', 'Price': '$620', 'Payment': 'Paid', 'status': 'Return' },
-                { 'name': 'Lenovo', 'Price': '$1199', 'Payment': 'Paid', 'status': 'Pending' },
-                { 'name': 'Macbook Air', 'Price': '$1199', 'Payment': 'Paid', 'status': 'Deliverd' },
-                { 'name': 'Airpods Pro', 'Price': '$199', 'Payment': 'Paid', 'status': 'Return' },
-            ]
-            console.log(myArray);
-            buildTable(myArray)
+    </div>
+
+    </div>
+
+    <script>
+        var myArray = [
+            { 'name': 'Star Refrigerator', 'Price': '$1200', 'Payment': 'Paid', 'status': 'Pending' },
+            { 'name': 'Window Coolers', 'Price': '$110', 'Payment': 'Due', 'status': 'In Progress' },
+            { 'name': 'Speakers', 'Price': '$620', 'Payment': 'Paid', 'status': 'Return' },
+            { 'name': 'Lenovo', 'Price': '$1199', 'Payment': 'Paid', 'status': 'Pending' },
+            { 'name': 'Macbook Air', 'Price': '$1199', 'Payment': 'Paid', 'status': 'Deliverd' },
+            { 'name': 'Airpods Pro', 'Price': '$199', 'Payment': 'Paid', 'status': 'Return' },
+        ]
+        console.log(myArray);
+        buildTable(myArray)
 
 
 
-            function buildTable(data) {
-                var table = document.getElementById('myTable')
+        function buildTable(data) {
+            var table = document.getElementById('myTable')
 
 
 
-                for (var i = 0; i < data.length; i++) {
+            for (var i = 0; i < data.length; i++) {
 
-                    var row = `<tr>
+                var row = `<tr>
                                     <td>${data[i].name}</td>
                                     <td>${data[i].Price}</td>
                                     <td>${data[i].Payment}</td>
                                     <td><span class="status ${Status(data[i].status)}">${data[i].status}</span></td>
                               </tr>`
-                    table.innerHTML += row
+                table.innerHTML += row
 
 
-                }
             }
-            function Status(status) {
-                switch (status) {
-                    case 'Pending':
-                        status = 'pending';
-                        break;
-                    case 'In progress':
-                        status = 'inprogress';
-                        break;
-                    case 'Deliverd':
-                        status = 'delivered';
-                        break;
-                    case 'Return':
-                        status = 'return';
-                        break;
+        }
+        function Status(status) {
+            switch (status) {
+                case 'Pending':
+                    status = 'pending';
+                    break;
+                case 'In progress':
+                    status = 'inprogress';
+                    break;
+                case 'Deliverd':
+                    status = 'delivered';
+                    break;
+                case 'Return':
+                    status = 'return';
+                    break;
 
-                }
-                return status;
             }
+            return status;
+        }
 
 
-        </script>
+    </script>
 
 
-        <script>
-            function toggleMenu() {
-                let toggle = document.querySelector('.toggle');
-                let navigation = document.querySelector('.navigation');
-                let main = document.querySelector('.main');
-                toggle.classList.toggle('active')
-                navigation.classList.toggle('active')
-                main.classList.toggle('active')
-            }
-        </script>
-        <script>
-            // API URL
-            var apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=Mugla&units=metric&APPID=0ea8612efcf970dae927da10aa0ec1b0';
-
-            // AJAX
-            jQuery.ajax({
-                url: apiUrl,
-                type: 'GET',
-                dataType: 'jsonp',
-                success: function (data) {
-
-                    console.log(data);
-
-                    // COORDINATES
-                    var coordLat = data.coord.lat;
-                    var coordLng = data.coord.lon;
-
-                    // WEATHER
-                    var weatherId = data.weather[0].id;
-                    var weatherMain = data.weather[0].main;
-                    var weatherDesc = data.weather[0].description;
-                    var weatherIcon = '<img src="https://openweathermap.org/img/w/' + data.weather[0].icon + '.png" />';
-                    var weatherBg = data.weather[0].icon;
-
-                    // BASE
-                    var baseData = data.base;
-
-                    // TEMP
-                    var mainTemp = data.main.temp;
-                    var mainPressure = data.main.pressure;
-                    var mainHumidity = data.main.humidity;
-                    var mainTempMin = data.main.temp_min;
-                    var mainTempMax = data.main.temp_max;
-
-                    // VISIBILITY
-                    var visibility = data.visibility;
-
-                    // WIND
-                    var windSpeed = data.wind.speed;
-                    var windDeg = data.wind.deg;
-
-                    // CLOUDS
-                    var clouds = data.clouds.all;
-
-                    // DT
-                    var dt = data.dt;
-
-                    // SYS
-                    var sysType = data.sys.type;
-                    var sysId = data.sys.id;
-                    var sysMessage = data.sys.message;
-                    var sysCountry = data.sys.country;
-                    var sysSunrise = data.sys.sunrise;
-                    var sysSunset = data.sys.sunset;
-
-                    // ID
-                    var id = data.id;
-
-                    // NAME
-                    var name = data.name;
-
-                    // COD
-                    var cod = data.cod;
-
-                    jQuery('#city').html(name);
-                    jQuery('#temp').html(mainTemp + '° C');
-                    jQuery('#desc').html(weatherDesc);
-                }
-
-            });
-        </script>
-        <!-- <script> 
-            $(document).ready(function weatherbox() {
+    <script>
+        function toggleMenu() {
+            let toggle = document.querySelector('.toggle');
+            let navigation = document.querySelector('.navigation');
+            let main = document.querySelector('.main');
+            toggle.classList.toggle('active')
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+        }
+    </script>
+    <script>
 
 
+        var input = document.querySelector('.input_text');
+        var main = document.querySelector('#name');
+        var temp = document.querySelector('.temp');
+        var desc = document.querySelector('.desc');
+        var clouds = document.querySelector('.clouds');
+        var button = document.querySelector('.submit');
 
 
-                //var city = $("#city").val();
+        button.addEventListener('click', function (name) {
+            fetch('https://api.openweathermap.org/data/2.5/weather?q=' + input.value + '&units=metric&appid=0ea8612efcf970dae927da10aa0ec1b0')
+                .then(response => response.json())
+                .then(data => {
+                    var tempValue = data['main']['temp'];
+                    var nameValue = data['name'];
+                    var descValue = data['weather'][0]['description'];
 
-                var city = 'LOndon';
+                    main.innerHTML = nameValue;
+                    desc.innerHTML = "Desc - " + descValue;
+                    temp.innerHTML = "Temp - " + tempValue;
+                    input.value = "";
 
-                //if (city != '') {
+                })
 
-                $.ajax({
-
-                    url: "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&units=metric" + "&APPID=0ea8612efcf970dae927da10aa0ec1b0",
-
-                    type: "POST",
-
-                    dataType: "json",
-
-                    success: function (data) {
-
-                        console.log(data);
-
-                        $('#city').text(data.name + data.main.temp)
-
-                        //var information = show(data);
-
-                        //$("#show").html(information);
-
-                    }
-
-                });
-
-                //}
-
-
-
-
-
-
-            });
-            // var table = '';
-            // var rows = 4;
-            // var cols = 5;
-
-            // {
-            //     table  += '<tr>';
-            //         for(var c = 1 ; c <= cols;c++)
-            //         {
-            //             table += '<td>' + c + '</td>';
-            //         }
-            //         table += '</tr>'
-            // }
-            // document.testingbar('<table> ' + table + '</table>');
-         </script> -->
+                .catch(err => alert("Wrong city name!"));
+        })
+    </script>
 </body>
 
 </html>
